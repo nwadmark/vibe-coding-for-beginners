@@ -48,35 +48,17 @@ Everything you need to run the Vibe Coding for Beginners workshop. This guide is
 
 ### 00:00–00:05 — HOOK (5 minutes)
 
-**What you are doing:** Running the finished tool live to show participants what they are about to build.
+**What you're doing:** Running the finished tool live to show participants what they are about to build.
 
 **Setup:** Share your screen showing the finished Decision Framework tool in Replit.
 
 **Script:**
 
-> "Let me show you something. This is a PM Decision Framework tool. I am going to evaluate a feature idea right now."
+> *Run the tool on your shared screen without narrating. Enter a feature name and scores while the room watches in silence. Let the result appear.*
 >
-> *Run the tool. Type as you talk:*
+> *Pause. Let them read the output.*
 >
-> "The feature is: Add one-click checkout to ShopFlow mobile app."
->
-> *Enter scores as you narrate:*
->
-> "Customer Value — I think this is high. Customers have been asking for it. I will give it an 8."
->
-> "Implementation Effort — The mobile team says it touches the payment stack. That is not trivial. I will say 6."
->
-> "Strategic Alignment — Our Q2 goal is conversion rate. This fits. A 7."
->
-> "Confidence — We have survey data but no prototype test. Medium confidence. I will say 5."
->
-> *Let the tool show the result. Pause so they can read the output.*
->
-> "The tool calculated a score, gave me a recommendation, showed me a visual breakdown, and suggested a next action. This took 15 seconds."
->
-> "You are going to build this. Today. In about 60 minutes."
->
-> "And you do not need to know how to code. You are going to describe what you want to an AI assistant, and it is going to write the code for you."
+> "I didn't write a single line of code to build that. You're going to build it yourself today. In about 60 minutes."
 >
 > *Pause for effect.*
 >
@@ -84,7 +66,7 @@ Everything you need to run the Vibe Coding for Beginners workshop. This guide is
 >
 > *Count hands.*
 >
-> "And who would say: I have never written code and I am a little nervous right now?"
+> "And who would say: I've never written code and I'm a little nervous right now?"
 >
 > *Count hands. Smile.*
 >
@@ -94,11 +76,11 @@ Everything you need to run the Vibe Coding for Beginners workshop. This guide is
 
 ### 00:05–00:15 — ORIENTATION (10 minutes)
 
-**What you are doing:** Teaching the vibe coding concept and explaining how the session works.
+**What you're doing:** Teaching the vibe coding concept and explaining how the session works.
 
 **Script — What is vibe coding:**
 
-> "So what is vibe coding? It is building software by describing what you want in plain English and letting an AI write the code."
+> "So what is vibe coding? It's building software by describing what you want in plain English and letting an AI write the code."
 >
 > "Here is how a PM's workflow changes. Before vibe coding: you have an idea, you write a ticket, you wait for engineering, you wait for the build, you review it, you request changes, you wait again. That can take weeks."
 >
@@ -108,7 +90,7 @@ Everything you need to run the Vibe Coding for Beginners workshop. This guide is
 
 **Script — Why PMs specifically:**
 
-> "PMs are actually the perfect people for this. Think about what vibe coding requires: you need to describe what a tool should do clearly, define inputs and outputs, set acceptance criteria, and iterate based on results. That is your job description."
+> "PMs are actually the perfect people for this. Think about what vibe coding requires: you need to describe what a tool should do clearly, define inputs and outputs, set acceptance criteria, and iterate based on results. That's your job description."
 >
 > "The skill is not coding. The skill is writing good requirements. And you already know how to do that."
 
@@ -140,19 +122,19 @@ Everything you need to run the Vibe Coding for Beginners workshop. This guide is
 
 ### 00:15–00:20 — FIRST PROMPT (5 minutes)
 
-**What you are doing:** Getting everyone to paste Prompt #1 and watch the AI generate code.
+**What you're doing:** Getting everyone to paste Prompt #1 and watch the AI generate code.
 
 **Script — Sharing the prompt:**
 
 > "Open your participant guide and scroll to Part 2, Loop 1. You will see Prompt #1 in a box."
 >
-> "I am also pasting it in the chat right now."
+> "I'm also pasting it in the chat right now."
 >
 > *Paste Prompt #1 into the shared chat.*
 >
-> "Copy that entire prompt. Every word matters — it is your specification. Then paste it into Claude or ChatGPT and hit send."
+> "Copy that entire prompt. Every word matters — it's your specification. Then paste it into Claude or ChatGPT and hit send."
 >
-> "Do that now. I will give you a minute."
+> "Do that now. I'll give you a minute."
 
 **Script — The "watch what happens" moment:**
 
@@ -168,13 +150,13 @@ Everything you need to run the Vibe Coding for Beginners workshop. This guide is
 
 > "When it finishes, take a look at the result. The AI generated 80 to 120 lines of Python from one paragraph of plain English."
 >
-> "You did not write code. You wrote a product spec. The AI did the engineering. That is the core idea."
+> "You did not write code. You wrote a product spec. The AI did the engineering. That's the core idea."
 
 ---
 
 ### 00:20–00:35 — BUILD (15 minutes)
 
-**What you are doing:** Walking everyone through copy, paste, run, and handling first errors.
+**What you're doing:** Walking everyone through copy, paste, run, and handling first errors.
 
 **Script — Copy, paste, run demo:**
 
@@ -188,17 +170,17 @@ Everything you need to run the Vibe Coding for Beginners workshop. This guide is
 >
 > *Demo this on your screen with the blank Repl while you talk.*
 >
-> "I am doing it right now on my screen. Watch — I paste the code, I click Run, and the tool starts asking me questions."
+> "I'm doing it right now on my screen. Watch — I paste the code, I click Run, and the tool starts asking me questions."
 
 **Script — The first error moment:**
 
-> "Now — some of you may see an error instead of the tool running. A red message in the console. That is completely normal."
+> "Now — some of you may see an error instead of the tool running. A red message in the console. That's completely normal."
 >
 > "Errors are part of the process. Even experienced developers see errors constantly. This does not mean you did something wrong."
 >
 > "If you see an error, here is what to do: copy the entire error message, go back to your AI assistant, paste it, and say: 'I got this error when I ran the code. Fix it.' The AI will give you corrected code."
 >
-> "That is the workflow. Describe, generate, run, observe, iterate. Errors are part of the iterate step."
+> "That's the workflow. Describe, generate, run, observe, iterate. Errors are part of the iterate step."
 >
 > *Give the room 3-4 minutes to get their tools running. Walk around and help people who are stuck.*
 
@@ -206,7 +188,7 @@ Everything you need to run the Vibe Coding for Beginners workshop. This guide is
 
 > *If several people have the same error:*
 >
-> "I am seeing a few people hit the same issue. Let me fix it on screen so everyone can see."
+> "I'm seeing a few people hit the same issue. Let me fix it on screen so everyone can see."
 >
 > *Paste the error into your AI assistant on the shared screen. Show the fix process in real time.*
 
@@ -238,9 +220,9 @@ Everything you need to run the Vibe Coding for Beginners workshop. This guide is
 
 > "Look at what Prompt #2 says. It says: add these features, keep existing logic, add these three things only."
 >
-> "That is a feature spec. That is what you put in a Jira ticket. The format is slightly different, but the skill — defining what to build, what to keep, and what to change — is exactly the same."
+> "That's a feature spec. That's what you put in a Jira ticket. The format is slightly different, but the skill — defining what to build, what to keep, and what to change — is exactly the same."
 >
-> "Vibe coding is not about learning a new skill. It is about applying a skill you already have in a new context."
+> "Vibe coding is not about learning a new skill. It's about applying a skill you already have in a new context."
 
 **Script — Loop 3 options introduction:**
 
@@ -260,9 +242,9 @@ Everything you need to run the Vibe Coding for Beginners workshop. This guide is
 
 > *Walk around and notice what people chose. Call out interesting examples:*
 >
-> "I see someone over here added comparison mode and is ranking three features against each other — that is a prioritization meeting in your terminal."
+> "I see someone over here added comparison mode and is ranking three features against each other — that's a prioritization meeting in your terminal."
 >
-> "Someone else customized the criteria to match their team's OKRs. That is exactly the kind of ownership we are talking about."
+> "Someone else customized the criteria to match their team's OKRs. That's exactly the kind of ownership we are talking about."
 
 ---
 
@@ -270,7 +252,7 @@ Everything you need to run the Vibe Coding for Beginners workshop. This guide is
 
 **Script — Share your work moment:**
 
-> "You have a working tool. Time to ship it. If you are in Replit, click Share and copy the link. If you are in Cursor, take a screenshot of the tool running."
+> "You have a working tool. Time to ship it. If you're in Replit, click Share and copy the link. If you're in Cursor, take a screenshot of the tool running."
 >
 > "Drop your link or screenshot in the chat. I want to see what everyone built."
 >
@@ -290,9 +272,9 @@ Everything you need to run the Vibe Coding for Beginners workshop. This guide is
 
 **Script — The mindset shift framing:**
 
-> "Here is what I want you to take away from today. You walked in as a PM who does not code. You are walking out as a PM who builds."
+> "Here is what I want you to take away from today. You walked in as a PM who does not code. You're walking out as a PM who builds."
 >
-> "That does not mean you are an engineer now. It means you have a new tool in your toolkit. When you need a quick analysis, a prototype, or an internal tool — you can build it yourself in an hour instead of waiting weeks."
+> "That does not mean you're an engineer now. It means you have a new tool in your toolkit. When you need a quick analysis, a prototype, or an internal tool — you can build it yourself in an hour instead of waiting weeks."
 >
 > "The boundary matters too. These tools are great for prototyping, internal use, and personal utilities. Shipping to production still needs engineering. But the gap between idea and prototype shrunk from weeks to minutes today."
 
@@ -324,10 +306,10 @@ Everything you need to run the Vibe Coding for Beginners workshop. This guide is
 > "You do not need to. Focus on what the tool does, not how it works under the hood. If something breaks, describe the problem to the AI and it will fix it. That said, over time you will naturally start recognizing patterns — and that understanding is a bonus, not a requirement."
 
 **"How is this different from just using ChatGPT?"**
-> "You are using ChatGPT — or Claude — but in a structured way. The difference is the workflow: writing prompts as product specs, iterating like you would on a feature, and building tools that persist and run independently. It is the difference between having a conversation and building a product."
+> "You're using ChatGPT — or Claude — but in a structured way. The difference is the workflow: writing prompts as product specs, iterating like you would on a feature, and building tools that persist and run independently. It's the difference between having a conversation and building a product."
 
 **"What about Cursor, Lovable, v0?"**
-> "Those are all great tools. Cursor is included as an option in this workshop. Lovable and v0 are better for building web apps with visual interfaces. This workshop focuses on command-line tools because they require zero setup and let you focus on the prompting skill. Once you are comfortable with that skill, tools like Lovable and v0 are a natural next step."
+> "Those are all great tools. Cursor is included as an option in this workshop. Lovable and v0 are better for building web apps with visual interfaces. This workshop focuses on command-line tools because they require zero setup and let you focus on the prompting skill. Once you're comfortable with that skill, tools like Lovable and v0 are a natural next step."
 
 **"What comes after this workshop?"**
 > "Three paths. One: build more tools from the reference library. Two: read the theory material to deepen your understanding. Three: try the capstone project for a bigger challenge. And if you build something interesting, submit it to the community showcases."
@@ -338,13 +320,13 @@ Everything you need to run the Vibe Coding for Beginners workshop. This guide is
 
 ### Half the room cannot get Replit working
 
-> "If Replit is not loading, try a different browser — Chrome tends to work best. If it is still not working, pair up with someone who has it running and share a screen. You can both paste prompts and one person runs the code. We will troubleshoot your setup after the session."
+> "If Replit is not loading, try a different browser — Chrome tends to work best. If it's still not working, pair up with someone who has it running and share a screen. You can both paste prompts and one person runs the code. We will troubleshoot your setup after the session."
 
 *If the problem is widespread, switch to a live-coding demo format: you type on screen, everyone watches, and they can build on their own afterward.*
 
 ### Different AI outputs from different participants
 
-> "Everyone's code will look slightly different. AI assistants generate unique code each time. That is expected. As long as your tool asks for scores and gives a recommendation, you are on track. The exact variable names and formatting do not matter."
+> "Everyone's code will look slightly different. AI assistants generate unique code each time. That's expected. As long as your tool asks for scores and gives a recommendation, you're on track. The exact variable names and formatting do not matter."
 
 ### Running behind schedule
 
@@ -365,15 +347,15 @@ Stretch goals for groups that finish early:
 
 ### Non-technical group feeling overwhelmed
 
-> "Take a breath. You are doing great. Remember — you are not writing code. You are writing descriptions of what you want. The AI handles the code part."
+> "Take a breath. You're doing great. Remember — you're not writing code. You're writing descriptions of what you want. The AI handles the code part."
 >
-> "If something is not working, that is not your fault. Copy the error, paste it to the AI, and ask it to fix it. That is the workflow for everyone, including experienced developers."
+> "If something is not working, that's not your fault. Copy the error, paste it to the AI, and ask it to fix it. That's the workflow for everyone, including experienced developers."
 
 *Slow down the pace. Do each step on screen first, then have them follow. Consider pairing non-technical participants with someone further along.*
 
 ### Technical group feeling bored
 
-> "If you are finding this comfortable, good — use the extra time to push further. Try combining multiple Prompt #3 options. Or open the prompts library and build something completely custom. The capstone project in the repo is designed as a bigger challenge if you want it."
+> "If you're finding this comfortable, good — use the extra time to push further. Try combining multiple Prompt #3 options. Or open the prompts library and build something completely custom. The capstone project in the repo is designed as a bigger challenge if you want it."
 
 *Give technical participants permission to go off-script. They will produce interesting showcases.*
 
