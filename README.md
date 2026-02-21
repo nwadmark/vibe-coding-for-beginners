@@ -73,6 +73,8 @@ If you have never written a line of code and feel nervous about this — that is
 
 You don't need to understand how code works. You just need to be able to follow instructions and copy-paste. If you can use Google Docs, you can do this.
 
+See a word you don't recognize? Check the [Glossary for Beginners](docs/glossary-for-beginners.md) — plain-English definitions for every technical term in this workshop.
+
 ## Full Contents
 
 | Section | What Is Inside |
