@@ -1,8 +1,8 @@
 # Pre-Work: Do This Before the Workshop
 
-**Time required: 15 minutes**
+**Time required: 15 minutes. You can do this from your couch.**
 
-Complete these steps before the session so you can jump straight into building when the workshop starts.
+Complete these three steps before the session so you can jump straight into building when the workshop starts. Each step tells you exactly what to do, what you will see, and what to do if something does not look right.
 
 ---
 
@@ -65,11 +65,13 @@ from a list of ratings 0-10. Add comments.
 
 **Use both?** Encouraged. If one hits a rate limit, switch to the other. Having both open in separate tabs is a good backup plan.
 
+**If that worked, great!** You asked an AI to write code and it did. That is the first half of vibe coding. If it did not work, don't worry — check the [troubleshooting table](#troubleshooting) at the bottom of this page before moving on.
+
 ---
 
 ## Step 2: Coding Environment (Choose One)
 
-You need a place to paste and run Python code. Pick one below.
+Now you need a place to paste that code and run it. Pick one below. **If you are new to this, pick Replit** — it runs in your browser and there is nothing to install.
 
 ### Option A: Replit — Recommended (Browser-Based)
 
@@ -80,8 +82,8 @@ Replit runs entirely in your browser. There is nothing to install on your comput
 3. Once logged in, click **Create Repl** (or the **+** button)
 4. Select **Python** as the template
 5. Give it a name like `pm-decision-tool` and click **Create Repl**
-6. You should see a code editor on the left and a console on the right
-7. Delete any starter code and paste this test:
+6. You should see a screen split into panels — a code editor (the big area where you paste code) and a console at the bottom (where you will see output and type answers)
+7. If there is any starter code already in the editor, select all of it (Ctrl+A on Windows, Cmd+A on Mac) and delete it. Then paste this test:
 
 ```python
 print("I'm ready to vibe code!")
@@ -90,21 +92,27 @@ print(f"Welcome, {name}!")
 ```
 
 8. Click the green **Run** button at the top
-9. **What you should see:** The console prints `I'm ready to vibe code!`, then waits for you to type your name. Type your name, press Enter, and it greets you.
+9. **What you should see:** The bottom panel prints `I'm ready to vibe code!`, then waits for you to type your name. **Click inside the bottom panel**, type your name, press Enter, and it greets you.
 
-**Free tier limits:** Replit's free tier includes enough compute time for all workshop projects. You get a limited number of Repls, but you only need one for this workshop.
+**Free tier limits:** Replit's free tier includes enough compute time for all workshop projects. You only need one Repl for this workshop.
 
-### Option B: Cursor — Optional (Local IDE)
+**Stuck here?** This is the #1 place people get stuck during pre-work. Here is exactly what to do:
+- If you do not see output after clicking Run, make sure your code is in the file called `main.py` (check the tab above the editor)
+- If you see red text with an error, select all the code (Ctrl+A or Cmd+A), delete it, and paste the test code again — sometimes extra spaces sneak in during copy-paste
+- If the program asks "What's your name?" but you cannot type, click **inside the bottom panel** (the console) first, then type
+- For anything else, check the [troubleshooting table](#troubleshooting) at the bottom of this page
 
-Cursor is a code editor that runs on your computer. Use this if you prefer working locally.
+### Option B: Cursor — Optional (For Experienced Users)
+
+Cursor is a code editor that runs on your computer. **If you are new to coding, skip this and use Replit above.** Cursor is for people who already have some experience with code editors or want files saved locally.
 
 1. Go to [cursor.com](https://cursor.com) and download the installer for your operating system
 2. Run the installer and open Cursor
 3. Check that Python is available:
-   - Open the built-in terminal (View → Terminal or `` Ctrl+` ``)
-   - Type `python --version` (or `python3 --version` on Mac/Linux) and press Enter
-   - You should see `Python 3.8` or higher
-   - If Python is not found, download it from [python.org/downloads](https://python.org/downloads)
+   - In Cursor, go to **View → Terminal** to open a text panel at the bottom of the screen
+   - Copy and paste this into that panel: `python --version` (on Mac/Linux, try `python3 --version` instead) and press Enter
+   - You should see `Python 3.8` or higher printed back
+   - If you see an error instead, download Python from [python.org/downloads](https://python.org/downloads)
 4. Create a new file called `test.py`
 5. Paste this test:
 
@@ -114,30 +122,32 @@ name = input("What's your name? ")
 print(f"Welcome, {name}!")
 ```
 
-6. Run it from the terminal: `python test.py`
-7. **What you should see:** Same output as above — a greeting with your name.
+6. Copy and paste this into the text panel at the bottom: `python test.py` and press Enter
+7. **What you should see:** Same output as with Replit — a greeting with your name.
 
 **Free tier limits:** Cursor's free tier includes AI features with a monthly usage cap. The workshop does not require Cursor's AI features (you will use Claude.ai or ChatGPT directly), so the free tier is more than enough.
 
 ---
 
-## Step 3: Run the Setup Verification Script
+## Step 3: Verify Everything Works
 
-This script checks that your environment has everything the workshop needs.
+This step checks that everything is set up correctly. If you see green checkmarks, you are ready. If you see red marks, scroll down to troubleshooting — it is almost always a quick fix.
 
-**Where to find it:** The file is at `setup/verify-setup.py` in the workshop repository.
+**Where to find the check script:** The file is at `setup/verify-setup.py` in the workshop repository.
 
-### Running in Replit
+### If you are using Replit
 
-1. In your Repl, create a new file called `verify-setup.py`
-2. Copy the contents of `setup/verify-setup.py` from the repository and paste them in
-3. Click **Run**
+1. In your Repl, click the **+** icon in the Files panel (left side) to create a new file
+2. Name it `verify-setup.py`
+3. Open `setup/verify-setup.py` from the repository, select all the code, and copy it
+4. Paste it into your new `verify-setup.py` file in Replit
+5. Make sure the `verify-setup.py` tab is selected (click it above the editor if needed)
+6. Click the green **Run** button
 
-### Running in Cursor
+### If you are using Cursor
 
-1. Open a terminal in Cursor
-2. Navigate to the workshop repository folder
-3. Run: `python setup/verify-setup.py`
+1. Open the text panel at the bottom of Cursor (View → Terminal)
+2. Copy and paste this into the panel: `python setup/verify-setup.py` and press Enter
 
 ### What the Output Should Look Like
 
@@ -158,19 +168,22 @@ This script checks that your environment has everything the workshop needs.
 
 📌 Optional Libraries
   ℹ️  streamlit (not installed — optional, needed for dashboard projects)
-     Install later with: pip install streamlit
 
 =============================================
 🎉 You are ready to go! Head to build/01-decision-framework/ to start.
 ```
 
-All green checkmarks on the required items means you are good. The `ℹ️` on streamlit is fine — that library is only needed for later projects.
+**If you see all green checkmarks (✅) on Python Version and Standard Libraries, you are ready.** That is the only thing that matters here.
 
-### What to Do If Something Fails
+The `ℹ️` on streamlit is completely fine — ignore it. That library is only needed for one advanced project later, and you can deal with it then.
 
-- **❌ on Python version:** Your Python is older than 3.8. Download a newer version from [python.org/downloads](https://python.org/downloads).
-- **❌ on a standard library:** This is unusual. It means your Python installation may be incomplete. Reinstall Python from [python.org/downloads](https://python.org/downloads).
-- **Script won't run at all:** Make sure you are running it with Python 3, not Python 2. Try `python3 setup/verify-setup.py` instead.
+### What to Do If You See Red Marks (❌)
+
+Don't panic — these are fixable:
+
+- **❌ on Python version:** Your Python is older than 3.8. Download a newer version from [python.org/downloads](https://python.org/downloads). If you are using Replit, this should not happen — Replit has a recent Python version built in.
+- **❌ on a standard library:** This is unusual and means your Python installation may be incomplete. If you are using Replit, try creating a fresh Repl. If you are using Cursor, reinstall Python from [python.org/downloads](https://python.org/downloads).
+- **Nothing happens when you click Run:** Make sure the `verify-setup.py` tab is selected in the editor (not `main.py`). In Replit, the Run button runs whichever file is currently open.
 
 ---
 
@@ -195,7 +208,7 @@ Vibe coding is building software by describing what you want in plain English an
 
 ### What We Are Building Today
 
-The **PM Decision Framework** — a command-line tool that helps you score and evaluate feature ideas using weighted criteria. You describe a feature, rate it on four dimensions, and the tool calculates a recommendation: Strong Go, Maybe, or No Go.
+The **PM Decision Framework** — an interactive tool that helps you score and evaluate feature ideas using weighted criteria. You describe a feature, rate it on four dimensions, and the tool calculates a recommendation: Strong Go, Maybe, or No Go.
 
 Why this tool specifically? Because every PM makes prioritization decisions, and this tool turns a subjective process into a structured one. It is useful on day one.
 
@@ -223,17 +236,21 @@ Before the workshop starts, confirm these five things:
 
 ## Troubleshooting
 
-| Problem | Solution |
+If something goes wrong, find your situation in this table. Every one of these has happened to other participants — you are not the first, and the fix is almost always quick.
+
+| What happened | What to do |
 |---|---|
-| Claude hit its free tier limit | Switch to ChatGPT (or vice versa). Having both accounts is a good backup. The limit resets every few hours. |
-| Replit won't load or is very slow | Try refreshing the page. If it persists, clear your browser cache or try a different browser (Chrome works best). |
-| Python error when running code | Copy the full error message, paste it back into your AI assistant, and ask it to fix the issue. This is part of the workflow. |
-| Can't install Python on my computer | Use Replit instead — it runs in your browser and has Python built in. No installation needed. |
-| Forgot my password for Claude/ChatGPT/Replit | Use the "Forgot password" link on the login page. Check your spam folder if the reset email does not arrive. |
-| Code runs but gives wrong or unexpected output | Paste the code and the output back into your AI assistant and describe what you expected instead. |
-| The test prompt gave different code than expected | That is normal. AI assistants generate slightly different code each time. As long as you got a code block with a Python function, you are all set. |
-| Slow internet connection | Close other browser tabs and applications. Replit needs a stable connection. If it is too slow, try Cursor (works offline after setup). |
+| Claude says you have reached your limit | Switch to ChatGPT (or vice versa). Having both accounts is a good backup. The limit resets on its own every few hours. |
+| Replit will not load or is very slow | Refresh the page. If it is still slow, try a different browser (Chrome works best) or close other tabs to free up memory. |
+| You see red text with an error after clicking Run | This is normal — it happens to everyone, including experienced developers. Copy the full red text, paste it into Claude or ChatGPT, and say "fix this error." That is the standard workflow. |
+| You cannot get Python working on your computer | Use Replit instead. It runs in your browser and has Python built in. No installation or setup needed. |
+| You forgot your password for Claude, ChatGPT, or Replit | Click "Forgot password" on the login page. Check your spam folder if the reset email does not arrive within a minute. |
+| The code runs but the output looks wrong | Paste the code and the output back into your AI assistant and describe what you expected instead. The AI will figure out the difference and fix it. |
+| The test prompt gave different code than expected | That is normal. AI assistants generate slightly different code each time. As long as you got a block of code (you will recognize it by the different background color), you are all set. |
+| Your internet is slow and Replit keeps freezing | Close other browser tabs and applications. Replit needs a stable connection. If it is still too slow, try again at a different time of day when your connection is stronger. |
 
 ---
 
-You are 15 minutes away from building your first tool. See you at the workshop.
+**You did it.** If you got through these three steps, you are ready for the workshop. The hardest part is behind you — from here on, it is all building.
+
+See you at the workshop.

@@ -124,15 +124,110 @@ AI assistant tab          Code editor tab
 - **In Claude:** Look for the Artifact panel on the right side. Click the **Copy** button in the top-right corner of the code block.
 - **In ChatGPT:** Look for the code block in the response. Hover over it and click the **Copy code** button.
 
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> ⚠️ IF YOU SEE THIS: "AI GAVE ME DIFFERENT CODE THAN THE EXAMPLE"
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> Your code looks nothing like the person sitting next to you.
+>
+> WHAT IT MEANS:
+> This is completely expected. AI assistants generate fresh code every time.
+> Your version might use different variable names, different formatting,
+> or even a different approach — and still work perfectly.
+>
+> WHAT TO DO:
+> 1. Do not panic. Different-looking code is normal.
+> 2. Copy it and paste it into your editor anyway.
+> 3. Run it. If it asks for a feature name and scores, it is working.
+> 4. If it does something completely unrelated to scoring features,
+>    go back to the AI and paste the prompt again.
+>
+> THIS IS NORMAL: Professional developers get different results from
+> AI tools every time. There is no single "correct" version of the code.
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 **Step 4:** Switch to your code editor.
 
 - **In Replit:** Select all existing code in the editor (Ctrl+A / Cmd+A), delete it, and paste the new code (Ctrl+V / Cmd+V).
 - **In Cursor:** Create a new file called `decision_tool.py`, paste the code, and save.
 
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> ⚠️ IF YOU SEE THIS ERROR
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> Error: `IndentationError: unexpected indent`
+> or: `IndentationError: expected an indented block`
+>
+> WHAT IT MEANS:
+> Python cares about the spaces at the beginning of each line. When you
+> copy-paste code, sometimes the spacing gets scrambled. This is not
+> your fault — it is a copy-paste quirk.
+>
+> WHAT TO DO:
+> 1. Go back to your AI assistant tab.
+> 2. Copy the code again — this time, click the **Copy** button
+>    instead of highlighting with your mouse (mouse-selecting
+>    sometimes grabs extra spaces).
+> 3. In your editor, select all (Ctrl+A / Cmd+A) and delete.
+> 4. Paste the fresh copy (Ctrl+V / Cmd+V).
+> 5. Run it again.
+>
+> THIS IS NORMAL: Indentation errors are the #1 most common Python
+> error in the world. Every Python developer has seen this hundreds
+> of times. It is a spacing issue, not a logic issue.
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 **Step 5:** Run it.
 
 - **In Replit:** Click the green **Run** button.
 - **In Cursor:** Open the terminal and run `python decision_tool.py`.
+
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> ⚠️ IF YOU SEE THIS ERROR
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> Error: `SyntaxError: invalid syntax`
+> (sometimes with a little arrow ^ pointing to a specific spot)
+>
+> WHAT IT MEANS:
+> Python found something it does not understand — a typo, a missing
+> colon, or a mismatched parenthesis. When AI generates code, this
+> occasionally happens. It is like a grammatical error in a sentence.
+>
+> WHAT TO DO:
+> 1. Copy the **entire error message** (including the line number).
+> 2. Go back to your AI assistant tab.
+> 3. Paste the error and say: "I got this error when I ran the code.
+>    Fix it."
+> 4. The AI will give you corrected code. Copy the whole thing and
+>    replace everything in your editor again.
+>
+> THIS IS NORMAL: Syntax errors happen to professional developers
+> every single day. The fix is almost always a one-character change
+> that the AI will catch instantly.
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> ⚠️ IF THIS HAPPENS: "NOTHING HAPPENS WHEN I CLICK RUN"
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> You clicked Run but the screen just... sits there. No error, no
+> output, nothing.
+>
+> WHAT IT MEANS:
+> The program is probably waiting for you to type something, but it
+> is waiting in a different panel than the one you are looking at.
+>
+> WHAT TO DO:
+> 1. **In Replit:** Look at the right side of the screen — the
+>    **Console** panel. Click inside it. You should see a blinking
+>    cursor or a prompt like "Describe a feature idea:". Type there.
+> 2. **In Cursor:** Look at the **Terminal** panel at the bottom.
+>    Click inside it and type your answer there.
+> 3. If you see absolutely nothing anywhere, try clicking Run again.
+> 4. If it still does nothing, select all code, delete it, re-paste
+>    from the AI, and try once more.
+>
+> THIS IS NORMAL: The "where do I type?" confusion happens to almost
+> everyone the first time. Once you find the right panel, it clicks
+> and you will not lose it again.
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 **Expected output:** The tool asks you to describe a feature. Try this example:
 
@@ -147,6 +242,55 @@ Confidence (1-10): 5
 
 You should see a calculated score, a recommendation (likely 🟢 or 🟡), a score breakdown, and a suggested PM action.
 
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> ⚠️ IF YOU SEE THIS ERROR
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> Error: `NameError: name 'customer_value' is not defined`
+> (or any variable name instead of 'customer_value')
+>
+> WHAT IT MEANS:
+> The code is trying to use a name it does not recognize. This usually
+> means the AI used a variable in one place but spelled it differently
+> somewhere else — like calling something `cust_value` at the top and
+> `customer_value` at the bottom.
+>
+> WHAT TO DO:
+> 1. Copy the **full error message**.
+> 2. Go back to your AI assistant.
+> 3. Paste the error and say: "I got a NameError. It looks like a
+>    variable name is misspelled or missing. Fix it."
+> 4. Copy the corrected code and replace everything in your editor.
+>
+> THIS IS NORMAL: Misspelled variable names are one of the top 3
+> errors in all of programming. The AI usually fixes it on the first
+> try when you show it the error.
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> ⚠️ IF YOU SEE THIS ERROR
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> Error: `TypeError: unsupported operand type(s) for *: 'str' and 'int'`
+> (or a similar TypeError mentioning 'str' and 'int')
+>
+> WHAT IT MEANS:
+> Python is trying to do math with text instead of numbers. When you
+> type "8" into the tool, Python sometimes treats it as the text
+> character "8" instead of the number 8. The AI needed to convert it
+> and may have missed a spot.
+>
+> WHAT TO DO:
+> 1. Copy the **full error message**.
+> 2. Go back to your AI assistant.
+> 3. Paste the error and say: "I got a TypeError. It looks like the
+>    input is not being converted to a number. Make sure all score
+>    inputs are converted to integers with int()."
+> 4. Copy the corrected code and replace everything in your editor.
+>
+> THIS IS NORMAL: This is Python's most common type error. It happens
+> because Python does not automatically guess whether "8" means the
+> number eight or the text character "8". One small fix and it is gone.
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 > **💡 PM Tip:** You described what you wanted in plain English. The AI turned it into working software. That is vibe coding. You did not need to know Python — you needed to know what a good decision framework looks like. That is a PM skill.
 
 #### Troubleshooting — Loop 1
@@ -156,6 +300,32 @@ You should see a calculated score, a recommendation (likely 🟢 or 🟡), a sco
 | `SyntaxError` or `IndentationError` | The code may not have copied cleanly. Go back to the AI assistant, copy the code again carefully, and replace everything in your editor. |
 | The tool runs but the score formula seems off | Paste the code back into your AI assistant and say: "The score calculation doesn't match the formula I gave you. Fix it." |
 | `input()` not working in Replit | Make sure you are clicking in the **Console** panel (right side) to type your answers, not in the code editor. |
+
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> **LOOP 1 SUCCESS CHECKLIST**
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> Check off what you've done:
+>
+> - [ ] I opened Claude.ai or ChatGPT in a browser tab
+> - [ ] I pasted Prompt #1 and hit send
+> - [ ] I saw code appear (in an Artifact panel or in the chat)
+> - [ ] I copied the code and pasted it into Replit (or Cursor)
+> - [ ] I clicked the green Run button
+> - [ ] The tool asked me to describe a feature
+> - [ ] I entered scores and saw a recommendation
+>
+> **If you checked most of these: You're doing great!** You just
+> built a working tool from a plain-English description. That is the
+> whole point of this workshop.
+>
+> **If you're stuck on one specific step:** That's your focus point.
+> Check the troubleshooting table right above, or visit
+> [I'm Stuck](../docs/im-stuck.md) for a step-by-step diagnosis.
+>
+> **If you got an error:** That counts as progress. Errors mean the
+> code ran and Python is telling you exactly what to fix. Scroll up
+> to the error boxes — your fix is there.
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ---
 
@@ -194,6 +364,35 @@ Now do the same cycle:
 
 **Expected output:** Same flow as before, but now you see labels after each input (like "High" for an 8) and a visual bar chart after the recommendation.
 
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> ⚠️ IF THIS HAPPENS: "OUTPUT LOOKS WRONG BUT NO ERROR"
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> The tool runs, no red error text appears, but something looks off.
+> Maybe the bars are jumbled, the score seems way too high, or the
+> labels are in the wrong place.
+>
+> WHAT IT MEANS:
+> The code runs fine — Python is happy. But the logic or formatting
+> does not match what you asked for. This is the most interesting kind
+> of problem because it is a product issue, not a code issue. You are
+> the one who spots it because you know what the output should look like.
+>
+> WHAT TO DO:
+> 1. Take a close look at what is wrong. Be specific. ("The bars all
+>    show 10/10 even though I entered different scores" is better than
+>    "it looks weird.")
+> 2. Go back to your AI assistant.
+> 3. Describe what you see vs. what you expected: "The bar chart shows
+>    all bars at the same length, but my scores were 8, 6, 7, 5. The
+>    bars should be different lengths. Fix this."
+> 4. Copy the corrected code and replace everything in your editor.
+>
+> THIS IS NORMAL: Finding logic bugs by looking at the output is
+> literally what QA testing is. You are doing product work right now —
+> testing, spotting issues, and writing clear bug reports. That is a
+> skill, not a failure.
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 > **💡 PM Tip:** You gave the AI a change request — add these three things, keep everything else. That is iterative product development. You are writing prompts the same way you would write acceptance criteria in a ticket. The skill transfers directly.
 
 #### Troubleshooting — Loop 2
@@ -203,6 +402,31 @@ Now do the same cycle:
 | The bars show up wrong (misaligned, wrong characters) | Paste the output back into your AI assistant and say: "The visual bars aren't aligned correctly. Here's what I see: [paste the output]. Fix the alignment." |
 | Some of the old features disappeared | The AI may have rewritten too much. Say: "You removed the risk flag and PM action suggestion. Add those back." |
 | The labels don't appear after input | Say: "The labels (Low/Medium/High/Maximum) should appear immediately after I enter each score, before the next question." |
+
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> **LOOP 2 SUCCESS CHECKLIST**
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> Check off what you've done:
+>
+> - [ ] I pasted Prompt #2 in the **same conversation** as Prompt #1
+> - [ ] I copied the new code and replaced everything in my editor
+> - [ ] I clicked Run and the tool still asks for a feature and scores
+> - [ ] I see labels like "High" or "Medium" after entering each score
+> - [ ] I see a visual bar chart after the recommendation
+> - [ ] The original features (risk flag, PM action) still work
+>
+> **If you checked most of these: Excellent!** You just shipped an
+> improvement to your own tool. You gave the AI a change request and
+> it delivered — exactly like writing a ticket for an engineer.
+>
+> **If something looks off but there's no error:** That's the "Output
+> looks wrong" scenario. Scroll up to that error box — you'll describe
+> what you see vs. what you expected, and the AI will fix it.
+>
+> **If old features disappeared:** The AI sometimes rewrites too much.
+> Tell it: "You removed [feature]. Add it back." That is a normal
+> part of iterating.
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ---
 
@@ -304,6 +528,32 @@ This replaces the default scoring criteria with your own team's priorities.
 | Comparison table is misaligned | Paste the output back to the AI and say: "The comparison table columns aren't aligned. Fix the formatting." |
 | The tool crashes when I choose compare mode | Say: "When I select 'compare', I get this error: [paste the error]. Fix it while keeping the single evaluation mode working." |
 
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> **LOOP 3 SUCCESS CHECKLIST**
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> Check off what you've done:
+>
+> - [ ] I chose one of the three Prompt #3 options (A, B, or C)
+> - [ ] I pasted it in the same AI conversation
+> - [ ] I copied the new code and replaced everything in my editor
+> - [ ] I clicked Run and tested the new feature
+> - [ ] The new feature works (log saves, comparison ranks, or criteria changed)
+> - [ ] The tool still does everything from Loops 1 and 2
+>
+> **If you checked most of these: You built a custom tool.** Not a
+> tutorial exercise — a tool *you* chose to build based on what
+> sounded useful to *you*. That is product thinking.
+>
+> **If the new feature doesn't work perfectly:** You're iterating.
+> Paste the error or describe the problem to the AI. Most fixes take
+> one round. Professional developers rarely get it right on the first
+> try either.
+>
+> **If you're behind and didn't get to Loop 3:** That is completely
+> fine. Each prompt generates a complete tool. You can do Loop 3 at
+> home — just open the same AI conversation and paste the prompt.
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 ---
 
 ## Part 3: Ship + Reflect (00:50–01:00)
@@ -330,6 +580,30 @@ Think about these three questions. You do not need to write anything down — bu
 3. **What would you build next?** If you had another hour, what tool would you describe to the AI? A customer feedback sorter? A sprint velocity tracker? A pricing model?
 
 > **⚠️ Watch Out:** Vibe coding is great for prototypes, internal tools, and personal utilities. It is not a replacement for production engineering. The tools you build today are useful as-is for PM work, but shipping them to customers would require engineering review, testing, and hardening. Know the boundary.
+
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> **SHIP + REFLECT SUCCESS CHECKLIST**
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> Check off what you've done:
+>
+> - [ ] I shared my tool (link or screenshot) in the workshop chat
+> - [ ] I can explain what my tool does in one sentence
+> - [ ] I noticed at least one thing the AI did that surprised me
+> - [ ] I can point to a decision *I* made that shaped the tool
+> - [ ] I have an idea for what I'd build next
+>
+> **If you checked most of these: You did it.** You went from zero
+> to a working PM tool in under an hour. You described what you
+> wanted, the AI built it, and you steered it into shape. That is
+> vibe coding.
+>
+> **If you didn't share:** No pressure. The tool is yours. You can
+> share it later or keep it private.
+>
+> **If you're thinking "I could build...":** Hold that thought. The
+> [next steps](#six-more-tools-to-build) section below has six more
+> tools ready for you to try.
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ---
 
