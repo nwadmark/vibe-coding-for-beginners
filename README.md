@@ -58,6 +58,21 @@ Work through any project at your own speed. Start with the Decision Framework, t
 2. **Pick your AI assistant** — Open [Claude.ai](https://claude.ai) or [ChatGPT](https://chat.openai.com) in a browser tab
 3. **Start building** — Head to [`build/01-decision-framework/`](build/01-decision-framework/) and follow the instructions
 
+## Never Coded Before? Start Here
+
+If you have never written a line of code and feel nervous about this — that is completely normal. Here is your path:
+
+1. **Don't read anything else yet. Just do this:**
+   - Go to [claude.ai](https://claude.ai) and sign up (like signing up for any website)
+   - Go to [replit.com](https://replit.com) and sign up (same thing)
+   - Open [`workshop/pre-work.md`](workshop/pre-work.md) and follow it step by step
+
+2. **The pre-work takes 15 minutes** and walks you through everything. Don't skip it — it is the single best thing you can do to feel prepared.
+
+3. **After pre-work, you will know if this is for you.** If it feels doable, continue to the workshop. If it feels too technical, that is okay — [give us feedback](https://github.com/nwadmark/vibe-coding-for-beginners/issues) on what confused you so we can make it better.
+
+You don't need to understand how code works. You just need to be able to follow instructions and copy-paste. If you can use Google Docs, you can do this.
+
 ## Full Contents
 
 | Section | What Is Inside |
