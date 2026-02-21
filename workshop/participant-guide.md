@@ -301,6 +301,32 @@ You should see a calculated score, a recommendation (likely 🟢 or 🟡), a sco
 | The tool runs but the score formula seems off | Paste the code back into your AI assistant and say: "The score calculation doesn't match the formula I gave you. Fix it." |
 | `input()` not working in Replit | Make sure you are clicking in the **Console** panel (right side) to type your answers, not in the code editor. |
 
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> **LOOP 1 SUCCESS CHECKLIST**
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> Check off what you've done:
+>
+> - [ ] I opened Claude.ai or ChatGPT in a browser tab
+> - [ ] I pasted Prompt #1 and hit send
+> - [ ] I saw code appear (in an Artifact panel or in the chat)
+> - [ ] I copied the code and pasted it into Replit (or Cursor)
+> - [ ] I clicked the green Run button
+> - [ ] The tool asked me to describe a feature
+> - [ ] I entered scores and saw a recommendation
+>
+> **If you checked most of these: You're doing great!** You just
+> built a working tool from a plain-English description. That is the
+> whole point of this workshop.
+>
+> **If you're stuck on one specific step:** That's your focus point.
+> Check the troubleshooting table right above, or visit
+> [I'm Stuck](../docs/im-stuck.md) for a step-by-step diagnosis.
+>
+> **If you got an error:** That counts as progress. Errors mean the
+> code ran and Python is telling you exactly what to fix. Scroll up
+> to the error boxes — your fix is there.
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 ---
 
 ### Loop 2: Improve the Tool (00:25–00:40)
@@ -376,6 +402,31 @@ Now do the same cycle:
 | The bars show up wrong (misaligned, wrong characters) | Paste the output back into your AI assistant and say: "The visual bars aren't aligned correctly. Here's what I see: [paste the output]. Fix the alignment." |
 | Some of the old features disappeared | The AI may have rewritten too much. Say: "You removed the risk flag and PM action suggestion. Add those back." |
 | The labels don't appear after input | Say: "The labels (Low/Medium/High/Maximum) should appear immediately after I enter each score, before the next question." |
+
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> **LOOP 2 SUCCESS CHECKLIST**
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> Check off what you've done:
+>
+> - [ ] I pasted Prompt #2 in the **same conversation** as Prompt #1
+> - [ ] I copied the new code and replaced everything in my editor
+> - [ ] I clicked Run and the tool still asks for a feature and scores
+> - [ ] I see labels like "High" or "Medium" after entering each score
+> - [ ] I see a visual bar chart after the recommendation
+> - [ ] The original features (risk flag, PM action) still work
+>
+> **If you checked most of these: Excellent!** You just shipped an
+> improvement to your own tool. You gave the AI a change request and
+> it delivered — exactly like writing a ticket for an engineer.
+>
+> **If something looks off but there's no error:** That's the "Output
+> looks wrong" scenario. Scroll up to that error box — you'll describe
+> what you see vs. what you expected, and the AI will fix it.
+>
+> **If old features disappeared:** The AI sometimes rewrites too much.
+> Tell it: "You removed [feature]. Add it back." That is a normal
+> part of iterating.
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ---
 
@@ -477,6 +528,32 @@ This replaces the default scoring criteria with your own team's priorities.
 | Comparison table is misaligned | Paste the output back to the AI and say: "The comparison table columns aren't aligned. Fix the formatting." |
 | The tool crashes when I choose compare mode | Say: "When I select 'compare', I get this error: [paste the error]. Fix it while keeping the single evaluation mode working." |
 
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> **LOOP 3 SUCCESS CHECKLIST**
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> Check off what you've done:
+>
+> - [ ] I chose one of the three Prompt #3 options (A, B, or C)
+> - [ ] I pasted it in the same AI conversation
+> - [ ] I copied the new code and replaced everything in my editor
+> - [ ] I clicked Run and tested the new feature
+> - [ ] The new feature works (log saves, comparison ranks, or criteria changed)
+> - [ ] The tool still does everything from Loops 1 and 2
+>
+> **If you checked most of these: You built a custom tool.** Not a
+> tutorial exercise — a tool *you* chose to build based on what
+> sounded useful to *you*. That is product thinking.
+>
+> **If the new feature doesn't work perfectly:** You're iterating.
+> Paste the error or describe the problem to the AI. Most fixes take
+> one round. Professional developers rarely get it right on the first
+> try either.
+>
+> **If you're behind and didn't get to Loop 3:** That is completely
+> fine. Each prompt generates a complete tool. You can do Loop 3 at
+> home — just open the same AI conversation and paste the prompt.
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 ---
 
 ## Part 3: Ship + Reflect (00:50–01:00)
@@ -503,6 +580,30 @@ Think about these three questions. You do not need to write anything down — bu
 3. **What would you build next?** If you had another hour, what tool would you describe to the AI? A customer feedback sorter? A sprint velocity tracker? A pricing model?
 
 > **⚠️ Watch Out:** Vibe coding is great for prototypes, internal tools, and personal utilities. It is not a replacement for production engineering. The tools you build today are useful as-is for PM work, but shipping them to customers would require engineering review, testing, and hardening. Know the boundary.
+
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> **SHIP + REFLECT SUCCESS CHECKLIST**
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> Check off what you've done:
+>
+> - [ ] I shared my tool (link or screenshot) in the workshop chat
+> - [ ] I can explain what my tool does in one sentence
+> - [ ] I noticed at least one thing the AI did that surprised me
+> - [ ] I can point to a decision *I* made that shaped the tool
+> - [ ] I have an idea for what I'd build next
+>
+> **If you checked most of these: You did it.** You went from zero
+> to a working PM tool in under an hour. You described what you
+> wanted, the AI built it, and you steered it into shape. That is
+> vibe coding.
+>
+> **If you didn't share:** No pressure. The tool is yours. You can
+> share it later or keep it private.
+>
+> **If you're thinking "I could build...":** Hold that thought. The
+> [next steps](#six-more-tools-to-build) section below has six more
+> tools ready for you to try.
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ---
 
