@@ -74,9 +74,17 @@ Work through any project at your own speed. Start with the Decision Framework, t
 
 ## Quick Start
 
-1. **Verify your setup** — Run `python setup/verify-setup.py` to check your environment is ready
-2. **Pick your AI assistant** — Open [Claude.ai](https://claude.ai) or [ChatGPT](https://chat.openai.com) in a browser tab
-3. **Start building** — Head to [`build/01-decision-framework/`](build/01-decision-framework/) and follow the instructions
+**New to this?** Start here: [Pre-Work Guide](workshop/pre-work.md) (15 min setup)
+
+**Ready to build?** Three steps:
+
+1. **Pick your AI assistant** — Open [Claude.ai](https://claude.ai) or [ChatGPT](https://chat.openai.com)
+2. **Set up Replit** — Sign up at [replit.com](https://replit.com) (free, runs in your browser)
+3. **Build your first tool** — Go to [build/01-decision-framework/](build/01-decision-framework/) and follow along
+
+You'll have a working PM tool in 60-75 minutes.
+
+---
 
 ## Full Contents
 
