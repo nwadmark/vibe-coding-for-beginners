@@ -113,8 +113,7 @@ Contributions are welcome — whether it is fixing a typo, improving an explanat
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+MIT — use it however you'd like.
+-----
 
----
-
-Built by NW
+Built with ❤️ by NW (https://github.com/nwadmark)
