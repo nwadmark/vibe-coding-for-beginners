@@ -10,6 +10,24 @@
 
 ## Never Coded Before? Start Here
 
+**Feeling nervous? That's normal.** This workshop is designed for complete beginners.
+
+Here's your path:
+
+1. **Don't read everything at once.** Start here:
+    - Sign up for [Claude.ai](https://claude.ai) (free)
+    - Sign up for [Replit](https://replit.com) (free)
+    - Open [Pre-Work Guide](workshop/pre-work.md) and follow it step by step (15 minutes)
+
+2. **The pre-work will tell you if this is for you.** If it feels doable, continue to the workshop. If it feels too technical, that's okay — let us know what confused you so we can improve it.
+
+3. **You don't need to understand how code works.** You just need to follow instructions and copy-paste. If you can use Google Docs, you can do this.
+
+**Stuck?** → [I'm Stuck Guide](docs/im-stuck.md)
+**Confused by a word?** → [Glossary for Beginners](docs/glossary-for-beginners.md)
+
+---
+
 ## What Is This?
 
 A hands-on workshop where product managers build real tools using free AI coding assistants. You will write prompts, not code — the AI handles the implementation. By the end, you will have a working Python tool you built yourself, plus a reference library of additional projects to explore at your own pace.
