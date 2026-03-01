@@ -9,29 +9,6 @@
 ---
 
 ## Never Coded Before? Start Here
-### 🚀 Quick Start (Clone the Repo)
-If you want to get the files onto your computer right now, copy and paste this command into your terminal:
-
-```bash
-git clone [https://github.com/nwadmark/vibe-coding-for-beginners.git](https://github.com/nwadmark/vibe-coding-for-beginners.git)
-
-**Feeling nervous? That's normal.** This workshop is designed for complete beginners.
-
-Here's your path:
-
-1. **Don't read everything at once.** Start here:
-   - Sign up for [Claude.ai](https://claude.ai) (free)
-   - Sign up for [Replit](https://replit.com) (free)
-   - Open [Pre-Work Guide](workshop/pre-work.md) and follow it step by step (15 minutes)
-
-2. **The pre-work will tell you if this is for you.** If it feels doable, continue to the workshop. If it feels too technical, that's okay — let us know what confused you so we can improve it.
-
-3. **You don't need to understand how code works.** You just need to follow instructions and copy-paste. If you can use Google Docs, you can do this.
-
-**Stuck?** → [I'm Stuck Guide](docs/im-stuck.md)
-**Confused by a word?** → [Glossary for Beginners](docs/glossary-for-beginners.md)
-
----
 
 ## What Is This?
 
