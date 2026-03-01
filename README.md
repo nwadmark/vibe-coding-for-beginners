@@ -9,6 +9,11 @@
 ---
 
 ## Never Coded Before? Start Here
+### 🚀 Quick Start (Clone the Repo)
+If you want to get the files onto your computer right now, copy and paste this command into your terminal:
+
+```bash
+git clone [https://github.com/nwadmark/vibe-coding-for-beginners.git](https://github.com/nwadmark/vibe-coding-for-beginners.git)
 
 **Feeling nervous? That's normal.** This workshop is designed for complete beginners.
 
